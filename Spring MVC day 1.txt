@@ -1,0 +1,27 @@
+
+Todays Lecture Agenda :
+
+Spring MVC (Model-View-Controller)
+
+Model      - database code 
+View       - Frontend code
+Controller - calling Functionality 
+
+Model Interface :
+	
+-Interface that defines a holder for model attributes. 
+-Primarily designed for adding attributes to the model. 
+
+Annotations in spring :
+
+@ModelAttribute :
+-At the method level to populate common data into the model for views.
+-As a method parameter to bind request data (e.g., form submissions) to Java objects.
+
+
+Questions :
+
+Spring MVC  and Spirng Boot deffn
+we have spring then why we used spring boot 
+Spring annotation 
+Spring Boot Anotation
