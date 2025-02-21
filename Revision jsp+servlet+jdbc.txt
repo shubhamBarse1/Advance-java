@@ -1,0 +1,193 @@
+
+Revision :
+
+JDBC          database code 
+Servlet       backend code
+JSP           frontend code
+
+
+JDBC (java code connect with database) 
+
+* All are present in java.sql package 
+* API
+* CRUD (create read update delete)
+note : no autmatic database create
+
+
+
+(java code + database)
+* firstly we need to add jar e.i mysql connector(8)
+jar = (Driver(C))  : types of Driver  1)jdbc-odbc Bridge Driver 2)Native API 3) NP 4)Thin/Universal(single Threded)
+
+
+key Components : Interface & classes
+  
+Connection(I) :
+maintain connection betn database Driver and Java Application
+Transaction manage with the help of methods such as rollback(),close(),commit().... void 
+
+Drivermanager(C) :
+it provides the getconnection method which is used to establish the connection with Driver/Database (url,id,pass)
+url = jbc:mysql://localhost:3306/(databasename)
+
+Statement(I)
+*) static queries 
+*) can not pass parameter at runtime
+*) passibility of sql injection attacks
+*) it executes only single query at time
+*) base interface 
+
+
+Execute()
+ExecuteUpdate()
+ExecuteQuery()
+
+PreparedStatement(I)
+
+*) Dynamic Queries
+*) can pass parameter at runtime
+*) there is no possibilty of sql injection atack
+*) multiple
+*) extends statement 
+
+Execute()         : create/ drop/ truncate   = DDL 
+ExecuteUpdate()   : DML = insert/update/delete
+ExecuteQuery()    : DQL = select Query
+
+ResultSet(I) :
+*) Fetch record which is present in database
+ one by one 
+
+ while(rs.next()){
+
+}
+
+
+
+Modular Approach :
+
+Controller  = main method (Calling functinality)
+Service     = Bussiness Logic 
+DAO         = Database code 
+
+
+
+Servlet : API     (Dynamic web project)   (jdbc/jsp/servlet) (javax/jakarta.servlet)
+server side tech 
+ accepts request and generate dynamic response 
+ web application 
+ 
+Components :
+
+*) Servlet(I)
+*) GenericServelt(AC) = service method is abstract 
+*) HTTPServlet(C)
+*) MyServlet(C)
+
+Server (Tomcat v(10.0.1)): SW/HW device according to request (get/post/put/delete)
+
+Status code 
+
+success 200 to 300 
+300 to 400 redirection
+400 to 500 client side errors
+500 to 600 server side errors
+
+
+Serlvet Lifecycle :
+
+1) Loading & Istantiate 
+2) Intialisation (init() = void) / only onces call 
+3) Service Handling(service() = void) /multiple times executes
+4) Detroy(void) / only onces call) destroy servlet objects
+
+diff betn httpServlet / generic servlet :
+
+
+fronted get == backend doget() / by default called 
+
+
+Diffn betn Get/Post :
+
+
+@Webservlet Annotation : 
+
+Provides mapping / class level annotation / no need to create web.xml file / present in jakarta.servlet package
+
+web.xml / Deployement Descriptive file 
+
+WEB-INF folder :
+
+
+
+RequestDispatcher(I) :
+Icludes()  / out.print("") / pages execute 
+forward()  / single page redirect 
+URL cant Change
+internal pages redorectin
+
+SendRedirect() method = of HttpServletResponse:
+URL change 
+external API  work 
+by using response object we call sendRedirect 
+
+
+JSP :
+
+jsp is an server side technolgy : 
+javacode + html code 
+we can create Dynamic web pages 
+JSP  converts into servlet 
+imlicit object (predefine object) 
+Expression Language(EN language  = ${name})
+jsp tags
+
+
+jsp lifecycle : 
+
+translation 
+compilation 
+
+same as servlet  
+
+
+lifecycle methods :
+
+jspinit();
+jspservice();
+jspdestroy();
+
+
+jsp vs Servlet 
+
+
+Servlet :
+
+java code 
+servlet is faster
+in MVC (C = servlet)
+lifecycle method init().......
+
+
+JSP :
+
+html + java code (it is not recommended)
+slower (it will takes time to convert into servert) 
+in MVC (V = jsp)
+lifecycle method jspinit().......
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
