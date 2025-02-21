@@ -1,0 +1,86 @@
+Todays Session Agenda :
+
+email : 204@thekiranacademy.com	
+
+*) Advance java : 
+ 
+- Daily task should be perform 
+- don't miss any session 
+ 
+	- Core Java => Technically Sound In core java 
+	- MySQL has to know 
+	- Basics of HTML , CSS 
+
+ MySQL queries : 
+
+create : create table Student(id int,name varchar(40),city varchar(30));
+	
+insert : insert into Student (id,name,city)values(1,'shubham','dhule'),(2,'rahul','pune');
+
+update : update Student set name ='kavina' where id=1;
+
+select // Fetch Data : select * from Student; 
+
+delete :  delete from Student where name='shubham';
+
+
+What i Provide :
+
+- JDBC Connection  (java database connectivity) (APIs)
+- Servlet 
+- JSP => Introductory 
+- Spring (IOC,MVC,AOP)and its(Annotations)
+- Spring Boot => restful API
+- Maven/Gradle - project management tool : 
+- Spring MVC (Model View Controller) design pattern : 
+- Hibernate/JPA/ORM 
+
+
+Diff bet core and Advance java ?
+
+core :
+
+ core java contains version like as J2SE(java 2 standard edition).
+ used for desktop or standalone applications.
+ we learn basic fundamentals concepts of java programming.
+ single tier architecture.
+ in core java we can developed desktop base or CMD base Applications.
+
+Advance : 
+
+in advance java contains version like as J2EE(java 2 enterprise edition).
+used for web and enterprise application i.e. server side applications.
+we learn advance concepts like as web & enterprise technologies.
+two tier architecture (client-server-architecture).
+in advance java we can developed web applications & enterprise applications.
+
+
+
+- we conduct Test 1,2 ,3 
+- Daily practise is required 
+- All questions are given & answers 
+
+Summary and Interview Questions :
+
+what is difference betn core java and Advance java ?
+How to Create Table Using MySQL query?
+Write down the query for add data into table ?
+Which query is used to update data into table ?
+
+
+Core Java  : 
+
+Array 
+String 
+Collection Frae...
+Control flow statement 
+ 
+
+
+
+
+
+
+
+
+

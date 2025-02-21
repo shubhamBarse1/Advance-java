@@ -1,0 +1,31 @@
+Date 30 sep 2024 :
+
+Last Lecture Agenda :
+
+1) Modular approach.
+2) implementation of DAO.
+
+
+Date 1 oct 2024 :
+
+1 Task Checking.
+2 Question Answer Session.
+
+
+
+1) What is jdbc ?
+2) What is Driver ?
+3) Database connectivity ?
+4) Differece betn statement and preparedstatement ?
+5) diffn betn execute() executeupdate() and executequery()?
+6) What is ResultSet ?
+7) Diff betn Resultset & Rowset?
+8) JDBC & ODBC diff ?
+9) Flow of Execution ?
+10) Modular Appraoch ?
+11) Implementation of dao ?
+
+
+
+JBK Test :
+   

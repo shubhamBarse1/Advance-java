@@ -1,0 +1,27 @@
+
+Todays Lecture Agenda :
+ 
+JDBC with Maven :
+
+1) Java Projects : explicitly create folders :
+
+2) Maven Projects : (Project management tool)
+ - Automatically manage Dependencies 
+ - it gives projects folder for (developer/tester)
+
+   such as   src/main/java =      for developer
+             src/test/java =      for tester
+             src/main/resources = static/templates/application.properties files etc...
+
+POM : (Project Object Model) 
+xml : (Extensible Markup Language) 
+
+HomeWork : 
+
+used maven project structure and perform CRUD operations with Statement and PreparedStatement 
+
+2) insert
+3) update
+4) delete
+5) Fetchalldata
+

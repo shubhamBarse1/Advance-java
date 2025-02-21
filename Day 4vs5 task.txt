@@ -1,0 +1,48 @@
+Date 27 sep 2024 : 
+
+Last Lecture Agenda :
+
+
+Statement 
+
+1) insert()
+2) fetchallrecord()
+3) update()
+4) delete()
+
+PreparedStatement
+ 
+1) insert()
+2) update()
+3) delete()
+4) fetchallrecord()
+
+
+Date 28 sep 2024 :
+
+Todays Lecture Agenda :
+
+*) practical
+
+1) Statement 
+2) PreparedStatement
+
+take an input from the user :
+
+By using Scanner Class.
+
+
+
+
+email : 190@thekiranacademy.com
+
+
+
+
+
+
+
+
+
+
+

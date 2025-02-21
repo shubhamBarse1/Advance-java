@@ -1,0 +1,86 @@
+*) DriverManager class :
+
+Jdbc DriverManager is an class in java.
+which is present in java sql package.
+it is used to establish the connection between database and Driver.  
+the DriverManager class is acts like as an interface between the User and Driver.
+it contains several methods to keep the interactions between the User and Driver like as GetConnection() ...
+
+
+*) Connection interface :
+
+Connection is interface which is present in java sql package.
+the connection interface maintain a session with the database, it can be used for transaction management.
+it provides the factory methods that returns the instance of Statement and Preparedstatement.
+it also provides methods for Trasactions management such as commit(),rollback(), close() etc ...
+
+
+PreparedStatement extends Statement {
+
+}
+
+
+2 What is Statement interface ?
+
+- Statement is an interface that present in java.sql.* package.
+- Its main purpose to represents SQL Statement & execute query with the database.
+- It compiled & execute every time for each query
+- it is used when sql query is to be executed only once.
+- you cannot pass the paramenter at runtime.
+- it is base interface.
+- used to execute normal sql queries.
+- performance is very low.
+- it is used for DDL statement.
+- in statement may be possibility of sql injection attacks.
+- It contains different methods like execute(),executeQuery(),executeUpdate().
+	
+
+	- Each methods has its own functionality :
+
+- execute() methods used to perform DDL oeprations like create,drop,and truncate the table & it returns only boolean value either true or false to validate table status changes.
+
+- executeQuery() methods used to perform DQL operations like select table data & it returns ResultSet Object, with the help of ResultSet Object we can get data from database
+
+- executeUpdate() methods used to perform DML operations like insert, delete & update & it returns a interger value. That meaning is row is upadated successfully.
+
+	
+3) PreparedStatement interface :
+
+- PreparedStatement is an interface that present in java.sql.* package
+- PreparedStatement is inhertaded the Statement Interface , it can do what a Statement can do, plus more
+- PreparedStatement Object represents a precompiled SQL statement. Means When PreparedStatement is created, the SQL query is passed as a parameter. This Prepared Statement contains a pre-compiled SQL query, so you can be be used to execute the statement multiple times.
+- it is used when sql queries is to be executed multiple times.
+- you can pass parameter at runtime.
+- it extends statement interface.
+- it is used to execute dynamic sql queries.
+- performance is better than statements.
+- it is used for any sql query.
+- in preparedstatement there is no possibility of sql injections attacks.
+- it contains same methods as statement like as execute(),executeQuery(),executeUpdate().
+
+
+ResultSet interface :
+
+- it is an interface present in java sql package.
+- it represent that database resultset.
+- the Resultset objects represent a row of a table.
+- by using the next() method we fetch the data one by one.
+- the return type of the next() method is Boolean.
+- A resultset always maintain the connection with database.
+- it cannot be serialize.
+
+RowSet Interface :
+
+- it is an interface present in java sql package.
+- jdbc rowset is wrapper of resultset.
+- it holds tabular data like resultset, but it is easy and flexible to used.
+- a rowset can be connected/disconnected from the database.
+- rowset objects can be serialize.
+
+
+summary & Interview Questions :
+
+ What is Connection , DriverManager ?
+ What is Statement / PreparedStatement / Difference between Statement and PreparedStatement / types of Statements.
+ What is ResultSet / RowSet?
+ Diff betn execute(),executeupdate()and executeQuery().
